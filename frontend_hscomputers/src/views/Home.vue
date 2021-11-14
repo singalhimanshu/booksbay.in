@@ -48,6 +48,7 @@ export default {
   components: {},
   mounted() {
     this.getLatestProducts();
+    document.title = "Home | hscomputers";
   },
   methods: {
     async getLatestProducts() {

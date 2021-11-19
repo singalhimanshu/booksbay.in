@@ -1,6 +1,10 @@
 <template>
   <div id="wrapper">
-    <nav class="navbar is-dark">
+    <nav
+      class="navbar is-dark is-fixed-top"
+      role="navigation"
+      aria-label="main navigation"
+    >
       <div class="navbar-brand">
         <router-link to="/" class="navbar-item"
           ><strong>hscomputers</strong></router-link

@@ -12,7 +12,9 @@
               <th>Product</th>
               <th>Price</th>
               <th>Quantity</th>
+              <th>Change Quantity</th>
               <th>Total</th>
+              <th>Remove</th>
               <th></th>
             </tr>
           </thead>

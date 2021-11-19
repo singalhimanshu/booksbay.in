@@ -7,8 +7,16 @@
     </td>
     <td>₹{{ item.product.price }}</td>
     <td>{{ item.quantity }}</td>
-    <a @click="decrementQuantity(item)">-</a>
-    <a @click="incrementQuantity(item)">+</a>
+    <a
+      class="button is-danger is-small mt-2 mb-2"
+      @click="decrementQuantity(item)"
+      >-</a
+    >
+    <a
+      class="button is-success is-small mt-2 mb-2 ml-2"
+      @click="incrementQuantity(item)"
+      >+</a
+    >
     <td>₹{{ getItemTotal(item).toFixed(2) }}</td>
     <td><button class="delete" @click="removeFromCart(item)"></button></td>
   </tr>

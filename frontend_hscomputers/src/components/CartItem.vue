@@ -48,7 +48,7 @@ export default {
     decrementQuantity(item) {
       item.quantity -= 1;
       if (item.quantity === 0) {
-        this.$emit("removeFromCart", item);
+        item.quantity = 1;
       }
       this.updateCart();
     },

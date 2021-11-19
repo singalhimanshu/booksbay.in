@@ -31,6 +31,8 @@
 </template>
 
 <script>
+import { toast } from "bulma-toast";
+
 export default {
   name: "CartItem",
   props: {
@@ -49,6 +51,14 @@ export default {
       item.quantity -= 1;
       if (item.quantity === 0) {
         item.quantity = 1;
+        toast({
+          message: "Quantity cannot be decreased further",
+          type: "is-warning",
+          dismissible: true,
+          pauseOnHover: true,
+          duration: 2000,
+          position: "bottom-right",
+        });
       }
       this.updateCart();
     },

@@ -9,6 +9,7 @@
         <table class="table is-fullwidth" v-if="cartTotalLength">
           <thead>
             <tr>
+              <th>Product Image</th>
               <th>Product</th>
               <th>Price</th>
               <th>Quantity</th>

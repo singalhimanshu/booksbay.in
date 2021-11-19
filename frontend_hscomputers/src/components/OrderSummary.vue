@@ -5,6 +5,7 @@
     <table class="table is-fullwidth">
       <thead>
         <tr>
+          <th>Product Image</th>
           <th>Product</th>
           <th>Price</th>
           <th>Quantity</th>
@@ -13,6 +14,9 @@
       </thead>
       <tbody>
         <tr v-for="item in order.items" v-bind:key="item.product.id">
+          <td>
+            <img width="100" height="100" :src="item.product.get_thumbnail" />
+          </td>
           <td>{{ item.product.name }}</td>
           <td>{{ item.product.price }}</td>
           <td>{{ item.quantity }}</td>

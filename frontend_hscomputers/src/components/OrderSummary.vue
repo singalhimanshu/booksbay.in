@@ -17,7 +17,11 @@
           <td>
             <img width="100" height="100" :src="item.product.get_thumbnail" />
           </td>
-          <td>{{ item.product.name }}</td>
+          <td>
+            <router-link :to="item.product.get_absolute_url">{{
+              item.product.name
+            }}</router-link>
+          </td>
           <td>{{ item.product.price }}</td>
           <td>{{ item.quantity }}</td>
           <td>{{ getItemTotal(item).toFixed(2) }}</td>

@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <section class="hero is-medium is-dark mb-6">
+    <section class="hero is-dark mb-6">
       <div class="hero-body has-text-centered">
         <p class="title mb-6">Welcome to hscomputers</p>
         <p class="subtitle">One place for all your computer needs.</p>
